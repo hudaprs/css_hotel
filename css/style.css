@@ -26,6 +26,7 @@ p {
   max-width: 1100px;
   margin: auto;
   padding: 0 20px;
+  overflow: auto;
 }
 
 .text-primary {
@@ -37,6 +38,7 @@ p {
 }
 
 .btn {
+  display: inline-block;
   border: none;
   cursor: pointer;
   color: #fff;
@@ -76,6 +78,7 @@ p {
 
 .l-heading {
   font-size: 40px;
+  line-height: 1.2;
 }
 
 /* Padding */
@@ -108,7 +111,7 @@ p {
 }
 
 #navbar ul li a {
-  float: left;
+  display: block;
   padding: 20px;
   text-align: center;
 }
@@ -178,10 +181,6 @@ p {
 }
 
 /* About Info */
-#about-info {
-  height: 400px;
-}
-
 #about-info .info-left {
   float: left;
   width: 50%;
@@ -195,16 +194,17 @@ p {
 }
 
 #about-info .info-right img {
-  float: right;
+  display: block;
+  margin: auto;
   width: 70%;
   border-radius: 50%;
 }
 
 /* Testimonials */
 #testimonials {
-  background: url('../img/test-bg.jpg') center center/cover;
-  height: 600px;
+  background: url('../img/test-bg.jpg') no-repeat center center/cover;
   padding-top: 100px;
+  height: 100%;
 }
 
 #testimonials h2 {
